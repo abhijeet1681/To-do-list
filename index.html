@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <div class="header">
+        <h1>Todo List</h1>
+      </div>
+      <main class="main">
+        <form class="todo-form">
+          <input type="text" name="todo-input" id="todo-input" class="todo-input" />
+          <button id="todo-submit" class="button todo-submit" type="submit" aria-label="add">
+            <svg class="icon">
+              <use xlink:href="#icon-add" /></svg>
+          </button>
+        </form>
+        <section class="todos">
+          <div class="filter">
+            <div class="radio-option">
+              <input type="radio" id="all" name="filter" value="all" checked>
+              <label for="all" class="radio-label">All</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="completed" name="filter" value="completed">
+              <label for="completed" class="radio-label">Completed</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="uncompleted" name="filter" value="uncompleted">
+              <label for="uncompleted" class="radio-label">Uncompleted</label>
+            </div>
+          </div>
+          <div class="todo-list" id="todo-list"></div>
+        </section>
+      </main>
+      <script src="index.js"></script>
+</body>
+</html>
